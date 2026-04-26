@@ -1,7 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial;
-    scroll-behavior: smooth;
+}
+
+/* make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* NAVBAR */
