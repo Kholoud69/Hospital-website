@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+header {
+    background: #ffffff;
+    color: white;
+    padding: 5px 20px;
+    /* ↓ reduce this */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: rgb(141, 164, 213);
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* HERO WITH IMAGE */
+.hero {
+    height: 90vh;
+    background-image: url("imgs/back2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    background: #eff2f7;
+    height: 310px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #0077b6;
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #0077b6;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    font-size: 22px;
+    line-height: 1.8;
+    color:#0077b6;
+}
+
+.overlay {
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: white;
+    padding-top: 460px;
+    padding-left: 120px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* SERVICES */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #edf7fe;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card p {
+    color: #0077b6;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: #0077b6;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.services h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #0077b6;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* DOCTORS */
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.doctor-card {
+    background: #f9f9f9;
+    margin: 10px;
+    padding: 15px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .doctor-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .doctor-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CONTACT */
+.contact {
+    background: #e0f7fa;
+}
+
+/* FOOTER */
+footer {
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+}
